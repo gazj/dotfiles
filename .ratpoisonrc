@@ -30,7 +30,7 @@ bind XF86HomePage exec uzbl-browser
 bind Return exec urxvt
 bind T exec urxvt -e top
 bind ; exec
-bind XF86AudioPlay exec urxvt -e ncmpmc
+bind XF86AudioPlay exec urxvt -e ncmpc
 
 # System information
 bind F1 exec ratpoison -c "echo `conky -q -i 1 -c .conky/all`"
