@@ -32,6 +32,8 @@ alias ncmpc='ncmpc -c'
 alias wdir='cd /wine/drive_c/Program\ Files'
 alias x='startx'
 eval `dircolors -b`
+# git aliases
+alias gpush="git commit -a -m '`cat .gitdots`' && git push github master"
 
 #var#
 export EDITOR="vi"
