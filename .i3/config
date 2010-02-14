@@ -8,6 +8,20 @@ exec ~/.startup
 # containing the introduction on first start.
 terminal /usr/bin/urxvt
 
+# workspace names
+workspace 1 Main
+workspace 2 Tiles
+
+# colours
+# 			border 		background	text
+client.focused		#00FF00 	#006600 	#00FF00
+client.focused_inactive	#FFFF00 	#666600 	#FFFF00
+client.unfocused	#0000FF 	#000033 	#0000FF
+client.urgent		#FF0000 	#660000 	#FF0000
+bar.focused		#00FF00 	#006600 	#00FF00
+bar.unfocused		#0000FF 	#000033 	#0000FF
+bar.urgent		#FF0000 	#660000 	#FF0000
+
 # ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
