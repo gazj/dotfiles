@@ -121,6 +121,12 @@ bindsym Mod4+Shift+2 m2
 #bindsym Mod4+Shift+9 m9
 #bindsym Mod4+Shift+0 m10
 
+# Marking
+# Read 1 character and mark the current window with this character
+bindsym Mod1+m exec i3-input -p 'mark ' -l 1 -P 'Mark: '
+# Read 1 character and go to the window with the character
+bindsym Mod1+g exec i3-input -p 'goto ' -l 1 -P 'Goto: '
+
 # Mod4+Enter starts a new terminal
 bindsym Mod4+Return exec /usr/bin/urxvt
 
@@ -135,7 +141,8 @@ bindsym Mod4+r exec /usr/bin/dmenu_run
 bindsym Mod4+Shift+x exit
 
 # Mod4+Shift+r restarts i3 inplace
-bindsym Mod4+Shift+r restart
+bindsym Mod4+Shift+r reload
+bindsym Mod1+shift+r restart
 
 #############################################################
 # DELETE THE FOLLOWING LINES TO DISABLE THE WELCOME MESSAGE #
