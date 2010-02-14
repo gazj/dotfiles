@@ -26,12 +26,12 @@ definekey top C-M-Tab prev
 definekey top C-M-r restart
 
 # applications and utilities
-definekey top M-b exec uzbl-browser
-definekey top M-t exec urxvt
-definekey top M-T exec urxvt -e top
-definekey top M-F2 exec
-definekey top M-Space exec
-definekey top M-m exec urxvt -e ncmpmc
+definekey top s-b exec uzbl-browser
+definekey top s-t exec urxvt
+definekey top s-T exec urxvt -e top
+definekey top s-F2 exec
+definekey top s-Space exec
+definekey top s-m exec urxvt -e ncmpmc
 
 # System information
 bind F1 exec ratpoison -c "echo `conky -q -i 1 -c .conky/all`"
