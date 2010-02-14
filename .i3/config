@@ -16,10 +16,10 @@ workspace 2 Tiles
 # 			border 		background	text
 client.focused		#00FF00 	#006600 	#00FF00
 client.focused_inactive	#FFFF00 	#666600 	#FFFF00
-client.unfocused	#0000FF 	#000033 	#0000FF
+client.unfocused	#0000FF 	#000066 	#0000FF
 client.urgent		#FF0000 	#660000 	#FF0000
 bar.focused		#00FF00 	#006600 	#00FF00
-bar.unfocused		#0000FF 	#000033 	#0000FF
+bar.unfocused		#0000FF 	#000066 	#0000FF
 bar.urgent		#FF0000 	#660000 	#FF0000
 
 # ISO 10646 = Unicode
