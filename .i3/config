@@ -64,10 +64,10 @@ bindsym Mod1+j wcj
 bindsym Mod1+k wck
 bindsym Mod1+l wcl
 # (alternatively, you can use the cursor keys:)
-bindsym Mod1+Left h
-bindsym Mod1+Down j
-bindsym Mod1+Up k
-bindsym Mod1+Right l
+bindsym Mod1+Left wch
+bindsym Mod1+Down wcj
+bindsym Mod1+Up wck
+bindsym Mod1+Right wcl
 
 # Snap (Mod4+Control+j/k/l/;)
 bindsym Mod4+Control+h sh
@@ -75,10 +75,10 @@ bindsym Mod4+Control+j sj
 bindsym Mod4+Control+k sk
 bindsym Mod4+Control+l sl
 # (alternatively, you can use the cursor keys:)
-bindsym Mod4+Control+Left h
-bindsym Mod4+Control+Down j
-bindsym Mod4+Control+Up k
-bindsym Mod4+Control+Right l
+bindsym Mod4+Control+Left sh
+bindsym Mod4+Control+Down sj
+bindsym Mod4+Control+Up sk
+bindsym Mod4+Control+Right sl
 
 # Move (Mod4+Shift+j/k/l/;)
 bindsym Mod4+Shift+h mh
@@ -86,10 +86,10 @@ bindsym Mod4+Shift+j mj
 bindsym Mod4+Shift+k mk
 bindsym Mod4+Shift+l ml
 # (alternatively, you can use the cursor keys:)
-bindsym Mod4+Shift+Left h
-bindsym Mod4+Shift+Down j
-bindsym Mod4+Shift+Up k
-bindsym Mod4+Shift+Right l
+bindsym Mod4+Shift+Left mh
+bindsym Mod4+Shift+Down mj
+bindsym Mod4+Shift+Up mk
+bindsym Mod4+Shift+Right ml
 
 # Move Container (Mod3+Shift+j/k/l/;)
 bindsym Mod1+Shift+h wcmh
