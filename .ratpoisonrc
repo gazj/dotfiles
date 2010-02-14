@@ -1,0 +1,54 @@
+# .ratpoisonrc
+###########################################################
+# ratpoison settings
+exec ~/.startup
+
+set border 1
+set barpadding 0 0 0 0
+set padding 0 0 0 0
+set fgcolor red
+set bgcolor black
+set fwcolor green
+set bwcolor blue
+set font Terminus:pixelsize=8
+
+startup_message off
+set bargravity c
+
+# change escape key to winkey
+escape Super_L 
+
+# alt tabing
+definekey top M-Tab next
+definekey top C-M-Tab prev
+
+# restart ratpoison
+definekey top C-M-r restart
+
+# applications and utilities
+definekey top M-b exec uzbl-browser
+definekey top M-t exec urxvt
+definekey top M-T exec urxvt -e top
+definekey top M-F2 exec
+definekey top M-Space exec
+definekey top M-m exec urxvt -e ncmpmc
+
+# System information
+bind F1 exec ratpoison -c "echo `conky -q -i 1 -c .conky/all`"
+bind F2 exec ratpoison -c "echo `conky -q -i 1 -c .conky/sys`"
+bind F3 exec ratpoison -c "echo `conky -q -i 1 -c .conky/cpu`"
+bind F4 exec ratpoison -c "echo `conky -q -i 1 -c .conky/mem`"
+bind F5 exec ratpoison -c "echo `conky -q -i 1 -c .conky/disk`"
+bind F6 exec ratpoison -c "echo `conky -q -i 1 -c .conky/bat`"
+bind F7 exec ratpoison -c "echo `conky -q -i 1 -c .conky/mail`"
+bind F8 exec ratpoison -c "echo `conky -q -i 1 -c .conky/mpd`"
+
+# redifined ratpoison commands
+bind space exec ~/.bin/ratwin
+bind period prev
+bind comma next
+bind less prevscreen
+bind greater nextscreen
+bind End quit
+bind Home only
+bind Delete delete
