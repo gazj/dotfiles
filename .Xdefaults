@@ -1,0 +1,27 @@
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0000/cccc
+urxvt*font:             xft:terminus:pixelsize=8
+urxvt*borderLess:        false
+urxvt*externalBorder:        0
+urxvt*internalBorder:        2
+urxvt*scrollBar:        false
+urxvt*foreground:        #c8c8c8
+urxvt*cursorColor:        #ffffff
+urxvt*cursorColor2:        #000000
+urxvt*cursorBlink:        false
+urxvt*inheritPixmap:        false
+urxvt*termName:                rxvt-unicode
+urxvt*saveLines:        1000
+urxvt*scrollTtyOutput:        false
+urxvt*scrollTtyKeypress:        true
+urxvt*mouseWheelScrollPage:        true
+urxvt*cutchars:                `'",;@&*=|?()<>[]{}
+urxvt*urlLauncher:      firefox
+
+Xcursor.theme: Bluecurve
+
+xmessage*form.background: black
+xmessage*Text*foreground: red
+xmessage*Text*background: black
+xmessage*message.background: black
+xmessage*button*Text:         red 
