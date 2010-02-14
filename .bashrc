@@ -60,7 +60,7 @@ esac
 gpush ()
 {
 cd ~
-git commit -a -m $1
+`git commit -a -m '$1'`
 git push github master
 cd -
 }
