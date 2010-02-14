@@ -33,7 +33,7 @@ alias wdir='cd /wine/drive_c/Program\ Files'
 alias x='startx'
 eval `dircolors -b`
 
-#var
+#var#
 export EDITOR="vi"
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 export WIILOAD='tcp:wii'
