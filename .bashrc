@@ -32,8 +32,6 @@ alias ncmpc='ncmpc -c'
 alias wdir='cd /wine/drive_c/Program\ Files'
 alias x='startx'
 eval `dircolors -b`
-# git aliases
-alias gpush="git commit -a -m '`cat .gitdots`' && git push github master"
 
 #var#
 export EDITOR="vi"
@@ -58,6 +56,14 @@ PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\033\\"'
                 ;;                                                              
 esac 
 
+# gpush - make git pushing easier
+gpush ()
+{
+cd ~
+git commit -a -m '$1'
+git push github master
+cd -
+}
 
 #dir size
 dirsize ()
