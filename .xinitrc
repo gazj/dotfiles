@@ -1,1 +1,1 @@
-exec ratpoison
+exec i3

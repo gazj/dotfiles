@@ -1,0 +1,129 @@
+# This configuration uses Mod4 and Mod3. Make sure they are mapped properly using xev(1)
+# and xmodmap(1). Usually, Mod4 is Alt (Alt_L) and Mod3 is Windows (Super_L)
+
+exec ~/.startup
+
+# Tell i3 about your preferred terminal. You can refer to this as $terminal
+# later. It is recommended to set this option to allow i3 to open a terminal
+# containing the introduction on first start.
+terminal /usr/bin/urxvt
+
+# ISO 10646 = Unicode
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+
+# Use Mouse+Mod4 to drag floating windows to their wanted position
+floating_modifier Mod4
+
+# Fullscreen (Mod4+f)
+bindsym Mod4+f f
+
+# Stacking (Mod4+h)
+bindsym Mod4+s s
+
+# Tabbed (Mod4+w)
+bindsym Mod4+t T
+
+# Default (Mod4+e)
+bindsym Mod4+g d
+
+# Toggle tiling/floating of the current window (Mod4+Shift+Space)
+bindsym Mod4+space t
+
+# Go into the tiling layer / floating layer, depending on whether
+# the current window is tiling / floating (Mod4+t)
+# bind Mod4+28 focus ft
+
+# Focus (Mod4+j/k/l/;)
+bindsym Mod4+h h
+bindsym Mod4+j j
+bindsym Mod4+k k
+bindsym Mod4+l l
+# (alternatively, you can use the cursor keys:)
+bindsym Mod4+Left h
+bindsym Mod4+Down j
+bindsym Mod4+Up k
+bindsym Mod4+Right l
+
+# Focus Container (Mod3+j/k/l/;)
+bindsym Mod1+h wch
+bindsym Mod1+j wcj
+bindsym Mod1+k wck
+bindsym Mod1+l wcl
+# (alternatively, you can use the cursor keys:)
+bindsym Mod1+Left h
+bindsym Mod1+Down j
+bindsym Mod1+Up k
+bindsym Mod1+Right l
+
+# Snap (Mod4+Control+j/k/l/;)
+bindsym Mod4+Control+h sh
+bindsym Mod4+Control+j sj
+bindsym Mod4+Control+k sk
+bindsym Mod4+Control+l sl
+# (alternatively, you can use the cursor keys:)
+bindsym Mod4+Control+Left h
+bindsym Mod4+Control+Down j
+bindsym Mod4+Control+Up k
+bindsym Mod4+Control+Right l
+
+# Move (Mod4+Shift+j/k/l/;)
+bindsym Mod4+Shift+h mh
+bindsym Mod4+Shift+j mj
+bindsym Mod4+Shift+k mk
+bindsym Mod4+Shift+l ml
+# (alternatively, you can use the cursor keys:)
+bindsym Mod4+Shift+Left h
+bindsym Mod4+Shift+Down j
+bindsym Mod4+Shift+Up k
+bindsym Mod4+Shift+Right l
+
+# Move Container (Mod3+Shift+j/k/l/;)
+bindsym Mod1+Shift+h wcmh
+bindsym Mod1+Shift+j wcmj
+bindsym Mod1+Shift+k wcmk
+bindsym Mod1+Shift+l wcml
+
+# Workspaces (Mod4+1/2/…)
+bindsym Mod4+1 1
+bindsym Mod4+2 2
+#bindsym Mod4+3 3
+#bindsym Mod4+4 4
+#bindsym Mod4+4 5
+#bindsym Mod4+6 6
+#bindsym Mod4+7 7
+#bindsym Mod4+8 8
+#bindsym Mod4+9 9
+#bindsym Mod4+0 10
+
+# Move to Workspaces
+bindsym Mod4+Shift+1 m1
+bindsym Mod4+Shift+2 m2
+#bindsym Mod4+Shift+3 m3
+#bindsym Mod4+Shift+4 m4
+#bindsym Mod4+Shift+5 m5
+#bindsym Mod4+Shift+6 m6
+#bindsym Mod4+Shift+7 m7
+#bindsym Mod4+Shift+8 m8
+#bindsym Mod4+Shift+9 m9
+#bindsym Mod4+Shift+0 m10
+
+# Mod4+Enter starts a new terminal
+bindsym Mod4+Return exec /usr/bin/urxvt
+
+# Mod4+Shift+q kills the current client
+bindsym Mod4+Shift+q kill
+
+# Mod4+v starts dmenu and launches the selected application
+# for now, we don’t have an own launcher
+bindsym Mod4+r exec /usr/bin/dmenu_run
+
+# Mod4+Shift+e exits i3
+bindsym Mod4+Shift+x exit
+
+# Mod4+Shift+r restarts i3 inplace
+bindsym Mod4+Shift+r restart
+
+#############################################################
+# DELETE THE FOLLOWING LINES TO DISABLE THE WELCOME MESSAGE #
+#############################################################
+exec xmessage -file /etc/i3/welcome
