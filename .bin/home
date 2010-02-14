@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ -f /tmp/home ]; then
+	exit
+else
+	sshfs $USER@reddwarf:/srv/nfs/documents /mnt/documents
+	sshfs $USER@reddwarf:/srv/nfs/media	/mnt/media
+	rm $HOME/{Shared,Music,Video}
+	ln -s /mnt/documents/shared $HOME/Shared
+	ln -s /mnt/media/Music $HOME/Music
+	ln -s /mnt/media/Video $HOME/Video
+	touch /tmp/home
+fi

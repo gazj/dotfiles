@@ -1,0 +1,2 @@
+#!/bin/bash
+sshfs root@ipod:/var/mobile/Media /media/ipod

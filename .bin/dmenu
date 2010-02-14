@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/dmenu -i -fn terminus -nb '#000000' -nf '#ff0000' -sb '#000000' -sf '#00FF00'

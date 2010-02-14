@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Mounting remote home"
+
+[ -f /usr/local/bin/home ] && /usr/local/bin/home
+[ -f $HOME/.bin/home ] && $HOME/.bin/home
+
+echo "Syncing home"
+unison /mnt/documents/$USER /home/$USER/Documents -auto -batch -mountpoint .syncproof -logfile /dev/null -prefer /mnt/documents/$USER
+
+echo "Sync Complete"

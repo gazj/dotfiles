@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ -L /home/gary/Music ]; then
+	rm /home/gary/Music
+	fi
+ln -s /home/gary/.bin/sync /home/gary/Music
+
+if [ -L /home/gary/Video ]; then
+	rm /home/gary/Video
+	fi
+ln -s /home/gary/.bin/sync /home/gary/Video
+
+if [ -L /home/gary/Shared ]; then
+	rm /home/gary/Shared
+	fi
+ln -s /home/gary/.bin/sync /home/gary/Shared
+
+if [ -f /tmp/home ]; then 
+	rm /tmp/home
+	fi
+
+if [ -d /mnt/media/Music ]; then
+	sudo umount /mnt/media
+	fi
+
+if [ -d /mnt/documents/gary ]; then
+	sudo umount /mnt/documents
+	fi
