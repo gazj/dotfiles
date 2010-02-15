@@ -9,6 +9,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 #aliases
+alias browser='uzbl-browser'
 alias netcfg='sudo netcfg'
 alias emerge='sudo emerge -av'
 alias pacman='sudo pacman'
@@ -25,7 +26,7 @@ alias swj='ssh swj@81.149.29.112'
 alias ratrc="vi ~/.ratpoisonrc && ratpoison -c restart"
 alias netsearch="sudo wifi-select wlan0"
 alias wifi-select="sudo wifi-select wlan0"
-alias oldpkg="chromium-browser http://schlunix.org/archlinux/"
+alias oldpkg="browser http://schlunix.org/archlinux/"
 alias bit="transmission-remote reddwarf"
 alias nocomment='egrep -v "^\s*(#|$)"'
 alias ncmpc='ncmpc -c'

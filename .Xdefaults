@@ -1,5 +1,6 @@
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0000/cccc
+urxvt*background: rgb:0000/0000/0000/cccc
+urxvt*shading:               01              trans=100, 0=opaque
 urxvt*font:             xft:terminus:pixelsize=8
 urxvt*borderLess:        false
 urxvt*externalBorder:        0
