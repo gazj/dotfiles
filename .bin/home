@@ -2,11 +2,10 @@
 if [ -f /tmp/home ]; then
 	exit
 else
-	sshfs $USER@reddwarf:/srv/nfs/documents /mnt/documents
-	sshfs $USER@reddwarf:/srv/nfs/media	/mnt/media
+	sshfs $USER@reddwarf:/srv/docs /mnt/docs
 	rm $HOME/{Shared,Music,Video}
-	ln -s /mnt/documents/shared $HOME/Shared
-	ln -s /mnt/media/Music $HOME/Music
-	ln -s /mnt/media/Video $HOME/Video
+	ln -s /mnt/docs/shared $HOME/Shared
+	ln -s /mnt/docs/shared/Music $HOME/Music
+	ln -s /mnt/docs/shared/Video $HOME/Video
 	touch /tmp/home
 fi
